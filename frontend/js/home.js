@@ -9,13 +9,13 @@ throw new Error(
 );
 }
 const dados = await resposta.json();
-document.getElementById("casos_por_ano").textContent = dados.casos_por_ano.toLocaleString("pt-BR");
+document.getElementById("por_ano").textContent = dados.por_ano.toLocaleString("pt-BR");
 document.getElementById("macro").textContent = dados.macro.toLocaleString("pt-BR");
 document.getElementById("ufs").textContent = dados.ufs.toLocaleString("pt-BR");
 document.getElementById("meses").textContent = dados.meses.toLocaleString("pt-BR");
 } catch (erro) {
 console.error(erro);
-document.getElementById("casos_por_ano").textContent = "Indisponível";}}
+document.getElementById("por_ano").textContent = "Indisponível";}}
 carregarDashboard();
 
 //Gráfico do projeto//
