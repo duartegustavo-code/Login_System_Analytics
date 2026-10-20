@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="./css/style_register.css">
+     <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="light">
+
+    <button class="theme-toggle-btn">🌞</button>
+    <!-- lado esquerdo -->
+    <main class="register-wrapper">
+        <header class="register_info">
+            <h1>Criar Conta</h1>
+            <p>Preencha os dados para se cadastrar no sistema</p>
+
+            <span>Já possui conta?</span>
+            <a href="./index.html">Voltar para o login</a>
+        </header>
+        <section class="register-card">
+            <form id="registerForm">
+                <div class="input-group">
+                    <label>Nome completo</label> 
+                    <input type="text" placeholder="Digite seu nome" id="nome">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label> 
+                    <input id="email" type="email" placeholder="Digite seu email" id="email">
+                </div>
+
+                <div class="input-group">
+                    <label>Senha</label> 
+                    <input type="password" placeholder="Digite sua senha" id="senha">
+                </div>
+
+                <div class="input-group">
+                    <label>Confirmar Senha</label> 
+                    <input type="password" placeholder="Repita a senha" id="confirmar">
+                </div>
+
+
+                    <button type="submit">Cadastrar</button>
+
+            
+            </form>
+        </section>
+
+        
+    </main>
+
+    <div id="customAlert" class="alert-overlay">
+        <div class="alert-box">
+            <h3 id="alertTitle">Aviso</h3>
+            <p id="alertMensagem">mensagem</p>
+            <button type="button" id="btnAlertConfirm">OK, ENTENDI</button>
+        </div>
+    </div>
+    
+    <script src="./js/register.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/theme.js"></script>
+</body>
+</html>

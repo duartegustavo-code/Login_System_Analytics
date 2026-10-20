@@ -1,0 +1,47 @@
+1. Qual é a função do register.js?
+Incrementar as funções do register;
+
+2. O que faz addEventListener("submit", ...)?
+Adiciona funções de eventos no código que ele está ligado, por exemplo btnAlertConfirm.addEventListener("click"), que adiciona um evento de "click" ao btnAlertConfirm
+
+3. Para que serve e.preventDefault()?
+Um comando que impede a ação padrão do navegador, por exemplo ao enviar arquivos em forms com submit, a ação comum da página seria reiniciar, esse comando impede que a página reinicie e continue a funcionalidades
+postas na página web.
+
+4. O que o .value faz?
+Permite que o códgio Java altere o que está escrito no código HTML.
+
+5. Qual a função do fetch()?
+Utilizado em comandos noje modernos, ele é usao para realizar uma requisição
+
+6. Por que utilizamos o método POST?
+Ele eé um método HTTP, usado para integrar dados no servidor, enquanto o JavaScript o executa  utilizando as funções da requisição imposta, usando fetch.
+
+7. Para que serve Content-Type: application/json?
+serve para informar ao servidor do cliente que o corpo da requisição HTTP contém dados estruturado no formato JSON
+
+8. Qual a função do JSON.stringify()?
+Converte um objeto ou valor em JavaScript em uma string no formato JSON
+
+9. O que é enviado no body?
+Por utilizar o método POST, os dados são enviados no formato JSON.
+
+10. Como o backend recebe esses dados?
+Por meio das requisições HTTP enviadas pelo frontend utilizando as rotas e APIs
+
+11. Para que serve bcrypt.hash() no backend?
+O bcrypt.hash é uma forma de criptografia por meio do método hash, que converte os dados entregues, por uma conta hexadecimal, que altera completamente o 
+dado fornecido, servindo para confirmar se o dado entregue na primeira vez condiz com o resultado do hash 
+
+12. O que significa resposta.ok?
+Verfica se a requisição foi bem sucedida.
+
+13. Para que serve resposta.json()?
+Serve ppara transformar uma resposta comum do servidor em um objeto JavaScript ou Array
+
+14. O que acontece quando o cadastro é realizado com sucesso?
+O servidor salva os dados do usuário, por meio de nome, e-mail, senha e confirmação, quando as informações cumprem com os requisitos do site, a senha sofre
+ação do bcrypt.hash, para que nos futuros logins, os dados sejam iguais com relação a senha posta e permita o usuário logar no site.
+
+15. Qual é a diferença entre a validação feita no register.js e a validação feita no auth.js?
+A validação do auth, vem de authenticator, que rege a validação do register.js.

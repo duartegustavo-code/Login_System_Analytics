@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1787090151526,
+    "nome": "João",
+    "email": "joao@email.com",
+    "senha": "$2b$10$5/ENwfOQwcta9l.q6uXFPenS3tuYOvvAAEszroNOnB75X9P2FbH0i"
+  },
+  {
+    "id": 1788211544795,
+    "nome": "maria",
+    "email": "maria@gmail.com",
+    "senha": "$2b$10$0SsYh03bnTPEhZzXAs3CxelIEO9KDCZfB71mvjdD2K.0zR3Lvqt2W"
+  },
+  {
+    "id": 1788220715544,
+    "nome": "daniela",
+    "email": "iela@gmail.com",
+    "senha": "$2b$10$F18hAr6yb59sieTHXPCA/uFWBmQFMSAOgwdOw4CcDfgYeYQFMICX2"
+  },
+  {
+    "id": 1788300720336,
+    "nome": "adrien",
+    "email": "adrien@email.com",
+    "senha": "$2b$10$oJT7ZIyjU6kIVkZ9E11hEOq1Fq7qKod9TxR/hlIsmbsBVdfGjIqZ2"
+  }
+]
