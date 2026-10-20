@@ -1,17 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style_home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
-</head>
-<body class="light">
-    <button class="theme-toggle-btn">🌞</button>
-    <h1>Bem vindo a nossa página home 🍀🦚🐳</h1>
+<meta charset="UTF-8">
 
-    <script src="./js/modal.js"></script>
-    <script src="./js/theme.js"></script>
+<meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+
+<title>Dashboard de Análise de Dados</title>
+<link rel="stylesheet" href="css/style_home.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/home.js" defer></script>
+</head>
+<body>
+<header class="cabecalho">
+<div>
+<h1>Dashboard de Análise de Dados</h1>
+<p>Projeto Vigilância Epidemiológica</p>
+</div>
+<button id="btnSair" type="button">Sair</button>
+</header>
+<main class="container">
+<section class="contexto">
+<h2>Sobre o projeto</h2>
+<p id="contextoProjeto">
+O projeto investiga as epizootias em primatas não humanos (PNH), que funcionam como
+alerta precoce da febre amarela. Apesar dessa importância, é difícil enxergar onde e quando
+elas se concentram ao longo dos anos.
+
+A análise usa os registros de epizootias do Ministério da Saúde (base
+fa_epizpnh_1994-2026.csv, tratada em dados_tratados.csv, com 2.637 registros), com datas
+completas de 14/11/2002 a 13/05/2026 e registros de 2000 a 2026. O público principal são
+gestores e profissionais de saúde, e também estudantes e o público em geral.
+</p>
+</section>
+<section class="indicadores">
+<article class="card">
+<h3>Casos por ano</h3>
+<p id="casos_por_ano">Carregando...</p>
+</article>
+<article class="card">
+<h3>Macrorregiões mais afetadas</h3>
+<p id="macro">Carregando...</p>
+</article>
+<article class="card">
+<h3>Municípios mais afetados</h3>
+<p id="ufs">Carregando...</p>
+</article>
+<article class="card">
+<h3>Meses com mais casos no decorrer do ano</h3>
+<p id="meses">Carregando...</p>
+</article>
+</section>
+<section class="grafico">
+<h2>5 municípios com maior número de registros</h2>
+<canvas id="graficoPrincipal"></canvas>
+</section>
+<section class="insight">
+<h2>Principal descoberta</h2>
+<p id="bigIdea">
+As epizootias em primatas se concentram em poucos picos, cada um
+quase todo em uma única macrorregião (Sudeste ou Sul) e sobretudo
+entre outubro e abril. Esses padrões indicam onde e quando
+investigar, mas não explicam suas causas</p>
+</section>
+<section class="conclusao">
+<h2>Conclusão e recomendação</h2>
+<p id="conclusaoProjeto">
+Investigar os fatores que podem explicar os picos e a mudança de região, integrando outras
+fontes de informação, como população e esforço de notificação, antes de propor ações. A
+recomendação se limita ao alcance da análise: os dados indicam onde e quando olhar com
+mais atenção, e não comprovam causas.
+</p>
+</section>
+</main>
 </body>
 </html>

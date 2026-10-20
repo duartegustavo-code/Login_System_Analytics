@@ -22,5 +22,11 @@
     "nome": "adrien",
     "email": "adrien@email.com",
     "senha": "$2b$10$oJT7ZIyjU6kIVkZ9E11hEOq1Fq7qKod9TxR/hlIsmbsBVdfGjIqZ2"
+  },
+  {
+    "id": 1792525466268,
+    "nome": "gustavo",
+    "email": "gustavo@email.com",
+    "senha": "$2b$10$PkKcWRSOfCqcSrWskFMe.uFp.3IioG9KNBc2FdPbarYKNOjLRR1iy"
   }
 ]
